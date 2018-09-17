@@ -7,7 +7,7 @@ echo "<h1>Registrering</h1>";
 
 //kollar om man har klickat på registrera knappen och skapar ett nytt objekt och kollar om något fält är tomt eller om den kan kalla på register functionen
 if (isset($_POST["submit_register"])) {
-    $user = new users($_POST);
+    $user = new User($_POST);
     if ($_POST["username"] == "" && $_POST["password"] == "") {
         echo "Användarnamnet och lösenordet är tomt!";
     } elseif ($_POST["password"] == "") {

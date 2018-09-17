@@ -1,14 +1,6 @@
 <?php
-session_start();
 
-// Se alla fel under development.
-/*
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-*/
-
-class users{
+class Users{
     public $username;
     public $password;
 
